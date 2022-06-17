@@ -27,13 +27,9 @@ function render() {
    todosNode.forEach( => {
     if (todo.done) {
         return;
-    };
+     };
 
-      html += `
-        <div>
-            ${todo.text}
-            <button data-id='${todo.id}'>Сделано</button>
-        </div>`;
+      html += `<div> ${todo.text}<button data-id ='${todo.id}'>Сделано</button></div>`;
    })
 
 
